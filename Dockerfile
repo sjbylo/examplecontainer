@@ -9,4 +9,4 @@ ENV GREETING Hello
 EXPOSE 8080
 USER 1001
 
-ENTRYPOINT echo Greeting: $GREETING - hostname: $(hostname) > /usr/share/nginx/html/index.html && /usr/sbin/nginx -g 'daemon off;'
+ENTRYPOINT echo Greeting: $GREETING - Hostname: $(hostname) > /usr/share/nginx/html/index.html && /usr/sbin/nginx -g 'daemon off;'
