@@ -1,12 +1,16 @@
-# examplecontainer
+# Example container
 
 # Build
 
+```
 docker build -t myapp . 
+```
 
 # Run
 
+```
 docker run --rm -it -e GREETING=Greetings -p 8080:8080 myapp 
+```
 
 The container will display someting like:
 
