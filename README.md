@@ -3,7 +3,16 @@
 This is an example demo app which simply displays a geeting and the hostname. 
 The default geeting can be changed at launch time.
 
-# Build
+# Run image from docker.io or quay.io
+
+```
+docker run --rm -d -p 8080:8080 --name demoapp docker.io/sjbylo/demoapp:latest
+or
+docker run --rm -d -p 8080:8080 --name demoapp   quay.io/sjbylo/demoapp:latest
+docker kill demoapp
+```
+
+# Build from Dockerfile
 
 ```
 docker build -t demoapp . 
