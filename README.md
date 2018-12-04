@@ -3,7 +3,7 @@
 This is an example demo app which simply displays a geeting and the hostname. 
 The default geeting can be changed at launch time.
 
-# Run image from docker.io or quay.io
+## Run image from docker.io or quay.io
 
 ```
 docker run --rm -d -p 8080:8080 --name demoapp docker.io/sjbylo/demoapp:latest
@@ -12,13 +12,13 @@ docker run --rm -d -p 8080:8080 --name demoapp   quay.io/sjbylo/demoapp:latest
 docker kill demoapp
 ```
 
-# Build from Dockerfile
+## Build from Dockerfile
 
 ```
 docker build -t demoapp . 
 ```
 
-# Run
+## Run
 
 ```
 docker run --rm -d -e GREETING="Hello World" -p 8080:8080 --name demoapp demoapp 
@@ -33,7 +33,7 @@ Greeting: Hello World - Hostname: 3a4f62444820
 
 Set the env variable GREETING with whattever you like, default is Hello
 
-# Clean up
+## Clean up
 
 ```
 docker kill demoapp
