@@ -1,5 +1,8 @@
 # Example container
 
+This is an example demo app which simply displays a geeting and the hostname. 
+The default geeting can be changed at launch time.
+
 # Build
 
 ```
