@@ -18,3 +18,4 @@ USER 1001
 
 ENTRYPOINT echo $GREETING from $(hostname) > /usr/share/nginx/html/index.html && \
 	/usr/sbin/nginx -g 'daemon off;'
+
