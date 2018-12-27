@@ -1,7 +1,7 @@
 # Example container
 
-This is an example demo app which simply displays a geeting and the hostname. 
-The default geeting can be changed at launch time.
+This is an example demo app which simply displays a greeting and the hostname. 
+The default greeting can be changed at launch time.
 
 ## Run image from docker.io or quay.io
 
@@ -24,14 +24,14 @@ docker build -t demoapp .
 docker run --rm -d -e GREETING="Hello World" -p 8080:8080 --name demoapp demoapp 
 ```
 
-The container will display someting like:
+The container will display something like:
 
 ```
 curl -s localhost:8080
 Greeting: Hello World - Hostname: 3a4f62444820
 ```
 
-Set the env variable GREETING with whattever you like, default is Hello
+Set the env variable GREETING with whatever you like, the default is Hello
 
 ## Clean up
 
@@ -39,5 +39,6 @@ Set the env variable GREETING with whattever you like, default is Hello
 docker kill demoapp
 ```
 
+# Source at
 
-
+https://github.com/sjbylo/examplecontainer
