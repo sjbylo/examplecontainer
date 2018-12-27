@@ -1,6 +1,6 @@
 # Example container
 
-This is an example demo app which simply displays a greeting and the hostname. 
+This is an example app which displays a greeting and the hostname. 
 The default greeting can be changed at launch time.
 
 ## Run image from docker.io or quay.io
