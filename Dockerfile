@@ -2,8 +2,8 @@
 #FROM centos:7
 FROM centos:7.6.1810
 RUN yum install epel-release -y && \
-	yum update --setopt=tsflags=nodocs -y && \
-	yum --setopt=tsflags=nodocs install nginx -y && \
+	yum update -y && \
+	yum install nginx -y && \
 	yum clean all -y
 
 # Switch the port to listen on
