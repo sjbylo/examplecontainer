@@ -1,4 +1,6 @@
-FROM centos:7.5.1804
+#FROM centos:7.5.1804
+#FROM centos:7
+FROM centos:7.6.1810
 RUN yum install epel-release -y && \
 	yum update --setopt=tsflags=nodocs -y && \
 	yum --setopt=tsflags=nodocs install nginx -y && \
@@ -14,6 +16,8 @@ RUN chmod -R 777 /var/log/nginx /var/lib/nginx /run /usr/share/nginx/html
 ENV GREETING Hello World 
 
 EXPOSE 8080
+
+# Ensure the continer will run as any user on OpenShift 
 USER 1001
 
 ENTRYPOINT echo $GREETING from $(hostname) > /usr/share/nginx/html/index.html && \
